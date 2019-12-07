@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DocFetchSelector
 {
-    public class DocFetcherSelectionAddon : CitaviAddOn<MainForm>
+    public class Addon : CitaviAddOn<MainForm>
     {
         #region Constants
 
