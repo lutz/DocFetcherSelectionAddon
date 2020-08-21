@@ -28,8 +28,6 @@ namespace DocFetchSelector
                     .GetCommandbarMenu(MainFormReferenceEditorCommandbarMenuId.Edit)
                     .AddCommandbarButton(DocFetcherSelectionAddon_Command, Strings.Command);
             }
-
-            base.OnHostingFormLoaded(mainForm);
         }
 
         public override void OnBeforePerformingCommand(MainForm mainForm, BeforePerformingCommandEventArgs e)
@@ -43,8 +41,6 @@ namespace DocFetchSelector
                     Run(mainForm,data.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries));
                 }
             }
-
-            base.OnBeforePerformingCommand(mainForm, e);
         }
 
         public override void OnLocalizing(MainForm form)
@@ -55,8 +51,6 @@ namespace DocFetchSelector
                              .GetCommandbarButton(DocFetcherSelectionAddon_Command);
 
             if (button != null) button.Text = Strings.Command;
-
-            base.OnLocalizing(form);
         }
 
         void Run(MainForm mainForm, IEnumerable<string> clipboardFiles)
