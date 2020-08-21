@@ -1,7 +1,0 @@
-organization=lutz
-projectKey=lutz_DocFetcherSelectionAddon
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.8111
-dashboardUrl=https://sonarcloud.io/dashboard?id=lutz_DocFetcherSelectionAddon
-ceTaskId=AXIsF-wpGczp6-GlkkpL
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXIsF-wpGczp6-GlkkpL
